@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "41402525105",
+    "firebase_url": "https://smartscale-d56b9.firebaseio.com",
+    "project_id": "smartscale-d56b9",
+    "storage_bucket": "smartscale-d56b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41402525105:android:46e584cb05d56cd3",
+        "android_client_info": {
+          "package_name": "olah.dome.smartscale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41402525105-00dvfr02gh44lq890ofm33mokb0a8ond.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "olah.dome.smartscale",
+            "certificate_hash": "9d7363874a93d8f5a1306bcfcd91a5c98a817476"
+          }
+        },
+        {
+          "client_id": "41402525105-750d44rccg96uumnqfpauir8ngdj1fa1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYf6eRLsdP3HgDEgrgObhU5p-8wPIH8iw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41402525105-750d44rccg96uumnqfpauir8ngdj1fa1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <EditText
+            android:id="@+id/etFood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Type in a food name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.7"
+            app:layout_constraintEnd_toStartOf="@id/buttSearch"/>
+
+    <Button
+            android:id="@+id/buttSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Search"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.3"
+            app:layout_constraintStart_toEndOf="@id/etFood"/>
+
+
+    <TextView
+            android:id="@+id/tvGramText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grams"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tvGram"
+            app:layout_constraintTop_toBottomOf="@+id/etFood"
+            app:layout_constraintBottom_toTopOf="@+id/tvCarbsText"/>
+
+
+    <TextView
+            android:id="@+id/tvGram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/tvGramText"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttSearch"
+            app:layout_constraintBottom_toTopOf="@+id/tvCarbs"/>
+
+    <TextView
+            android:id="@+id/tvCarbsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carbohydrate:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tvCarbs"
+            app:layout_constraintTop_toBottomOf="@+id/tvGramText"
+            app:layout_constraintBottom_toTopOf="@+id/tvCaloriesText"/>
+
+    <TextView
+            android:id="@+id/tvCaloriesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tvCalories"
+            app:layout_constraintTop_toBottomOf="@+id/tvCarbsText"
+            app:layout_constraintBottom_toTopOf="@+id/tvFatText"/>
+
+    <TextView
+            android:id="@+id/tvFatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fat:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tvFat"
+            app:layout_constraintTop_toBottomOf="@+id/tvCaloriesText"
+            app:layout_constraintBottom_toTopOf="@+id/tvProteinText"/>
+
+    <TextView
+            android:id="@+id/tvProteinText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Protein:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tvProtein"
+            app:layout_constraintTop_toBottomOf="@+id/tvFatText"
+            app:layout_constraintBottom_toTopOf="@+id/buttLogout"/>
+
+    <TextView
+            android:id="@+id/tvCarbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 g"
+            app:layout_constraintLeft_toRightOf="@+id/tvCarbsText"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvGram"
+            app:layout_constraintBottom_toTopOf="@+id/tvCalories"/>
+
+
+    <TextView
+            android:id="@+id/tvCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 g"
+            app:layout_constraintLeft_toRightOf="@+id/tvCaloriesText"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCarbs"
+            app:layout_constraintBottom_toTopOf="@+id/tvFat"/>
+
+    <TextView
+            android:id="@+id/tvFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 g"
+            app:layout_constraintLeft_toRightOf="@+id/tvFatText"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCalories"
+            app:layout_constraintBottom_toTopOf="@+id/tvProtein"/>
+
+    <TextView
+            android:id="@+id/tvProtein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 g"
+            app:layout_constraintLeft_toRightOf="@+id/tvProteinText"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFat"
+            app:layout_constraintBottom_toTopOf="@+id/buttLogout"/>
+
+
+
+    <Button
+            android:id="@+id/buttLogout"
+            android:text="Lougout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+    />
+
+</android.support.constraint.ConstraintLayout>
